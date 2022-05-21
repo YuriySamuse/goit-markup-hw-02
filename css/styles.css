@@ -3,16 +3,25 @@
     --text-color:#757575;
     --accent-color: #2196F3;
     --btn-color: #FFFFFF;
+    --portfol-btn: #F5F4FA;
 }
 
 body {
-    font-family: Roboto sans-serif;
+    font-family: 'Roboto';
 }
 .link {
     text-decoration: none;
 }
 .list {
     list-style: none;
+}
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
 }
 
 .visually-hidden {
@@ -29,13 +38,16 @@ body {
   }
 
 .header-logo {
-    font-family: 'Raleway' sans-serif;
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--title-color);
+}
+.prelogo {
+    color: var(--accent-color);
 }
 
 /* -----nav-menu----- */
@@ -54,6 +66,10 @@ body {
     letter-spacing: 0.02em;
     color: var(--accent-color);
 }
+.current {
+    color: var(--accent-color);
+}
+
 /* ----contacts-menu----- */
 .heder-cont {
     font-weight: 500;
@@ -84,7 +100,7 @@ body {
     color: #FFFFFF;
 }
 .hero-btn {
-    position: absolute;
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -95,17 +111,13 @@ body {
     color: var(--btn-color);
     background: var(--accent-color);
 }
+.hero-btn:hover {
+    background: #188CE8;
+
+}
 
 /* ---About---- */
 
-.about-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--title-color);
-}
 .about-list-title {
     font-weight: 700;
     font-size: 14px;
@@ -120,16 +132,11 @@ body {
     letter-spacing: 0.03em;
     color: var(--text-color);
 }
+/* -----Service---- */
 
 /* -----Masters----- */
-
-.masters-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--title-color);
+.masters-item {
+    background-color: #FFFFFF;
 }
 .masters-item-title {
     font-weight: 500;
@@ -140,13 +147,48 @@ body {
     color: var(--title-color);
 }
 .masters-item-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-color);
 }
+
+/* -----Portfolio------- */
+main {
+    background-color: #E5E5E5;
+}
+   /* ----Nav-Button------- */
+   .nav-btn {
+       
+   }
+   .btn {
+    font-family: inherit;
+    background-color: var(--portfol-btn);
+   }
+   .btn:hover,
+   .btn:focus {
+    color: var(--btn-color);  
+    background-color: var(--accent-color);
+   }
+
+   /* ------Cards------- */
+   .card-item {
+       background-color: #FFFFFF;
+   }
+   .card-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+   }
+   .card-text {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--text-color); 
+   }
 
 /* -----Foooter----- */
 .footer {
@@ -163,6 +205,7 @@ body {
 
 }
 .footer-adress {
+    font-style:normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
