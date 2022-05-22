@@ -59,16 +59,10 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--text-color);
+  color: var(--title-color);
 }
 .heder-link:hover,
-.heder-link:focus {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
-}
+.heder-link:focus,
 .current {
   color: var(--accent-color);
 }
@@ -164,6 +158,12 @@ body {
 .filter-btn {
   cursor: pointer;
   font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
   background-color: var(--portfol-btn);
 }
 .filter-btn:hover,
